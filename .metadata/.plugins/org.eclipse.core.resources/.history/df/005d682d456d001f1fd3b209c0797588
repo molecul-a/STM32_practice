@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdint.h>
+#include "stm32f4xx.h"
+#include "adc.h"
+#include "uart.h"
+
+#define GPIOAEN			(1U<<0)
+#define GPIOA_5			(1U<<5)
+#define LED_PIN			GPIOA_5
+
+uint32_t sensor_value;
+int main(void)
+{
+	uar2_tx_init();
+	pa1_adc_init();
+
+	while(1)
+	{
+		start_conversion();
+		sensor_value = adc_read();
+		printf("Sensor value: %d\n\r",(int)sensor_value);
+	}
+}
+
+
+

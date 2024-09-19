@@ -1,0 +1,26 @@
+/*
+ * adc.c
+ *
+ *  Created on: Sep 7, 2024
+ *      Author: artyom
+ */
+
+#define ADC1EN			(1U<<8)
+#define
+#define
+#define
+#define
+
+
+void pa1_adc_init(void)
+{
+	//*******Configure the ADC GPIO pin*******
+	//Enable clock access to GPIOA
+
+	//Set the mode of PA1 to analog
+
+	//*******Configure the ADC module*********
+	//Enable clock access to ADC
+
+	//Configure ADC parameters
+}

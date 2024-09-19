@@ -1,0 +1,16 @@
+22:17:55 **** Incremental Build of configuration Debug for project 9_adc_single_conversion ****
+make -j24 all 
+arm-none-eabi-gcc -o "9_adc_single_conversion.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/artyom/Documents/STM32/9_adc_single_conversion/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_adc_single_conversion.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 9_adc_single_conversion.elf
+ 
+arm-none-eabi-size  9_adc_single_conversion.elf 
+arm-none-eabi-objdump -h -S 9_adc_single_conversion.elf  > "9_adc_single_conversion.list"
+   text	   data	    bss	    dec	    hex	filename
+   5572	     92	   1908	   7572	   1d94	9_adc_single_conversion.elf
+Finished building: default.size.stdout
+ 
+Finished building: 9_adc_single_conversion.list
+ 
+
+22:17:56 Build Finished. 0 errors, 0 warnings. (took 216ms)
+

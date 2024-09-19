@@ -1,0 +1,27 @@
+/*
+ * adc.c
+ *
+ *  Created on: Sep 7, 2024
+ *      Author: artyom
+ */
+#include "stm32f4xx.h"
+#define ADC1EN			(1U<<8)
+#define GPIOAEN			(1U<<0)
+#define
+#define
+#define
+
+
+void pa1_adc_init(void)
+{
+	//*******Configure the ADC GPIO pin*******
+	//Enable clock access to GPIOA
+	RCC->AHB1ENR |= GPIOAEN;
+	//Set the mode of PA1 to analog
+
+	//*******Configure the ADC module*********
+	//Enable clock access to ADC
+	RCC->AHB2ENR |= ADC1EN;
+	//Configure ADC parameters
+
+}

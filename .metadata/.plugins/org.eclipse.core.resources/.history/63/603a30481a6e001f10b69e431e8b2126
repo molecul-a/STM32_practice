@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdint.h>
+#include "stm32f4xx.h"
+#include "adc.h"
+#include "uart.h"
+#include "systick.h"
+
+int main(void)
+{
+	uart2_tx_init();
+
+	while(1)
+	{
+
+	}
+}
+
+
+

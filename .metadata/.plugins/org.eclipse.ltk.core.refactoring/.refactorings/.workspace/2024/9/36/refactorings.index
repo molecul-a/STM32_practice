@@ -1,0 +1,8 @@
+1725391583151	Delete resource '0_led_toggle_addr/0_led_toggle_addr Debug.launch'
+1725392025909	Delete resource '0_led_toggle_addr/0_led_toggle_addr.launch'
+1725394994947	Rename resource '1_led_toggle_addr'
+1725395552399	Delete resource '1_led_toggle_addr_struct'
+1725565255848	Delete resource '7_uart_modular/Src/uart.c'
+1725724655312	Delete resource '9_adc/Src/uart.c'
+1725725047285	Delete resource '9_adc/Inc/uart.h'
+1725732836814	Rename resource '9_adc'

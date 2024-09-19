@@ -1,0 +1,35 @@
+#include "stm32f4xx.h"
+
+#define UART2EN 		(1U<<17)
+#define
+#define
+#define
+#define
+#define
+#define
+
+int main(void)
+{
+
+
+	while(1)
+	{
+
+
+	}
+}
+
+void uar2_tx_init(void)
+{
+	//*************Configure UART GPIO pin************
+	//enable CLOCK access to GPIOA
+	//set PA2 mode to alternative function mode
+	//set PA2 alternate function type to UART_TX (AF07)
+
+	//*************Configure UART module****************
+	//enable clock access to uart2
+	//configure baudrate
+	//configure the transfer direction
+	//enable UART module
+
+}
