@@ -1,0 +1,26 @@
+20:28:57 **** Incremental Build of configuration Debug for project 11_Systick_delay ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f411retx.d" -MT"Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f411retx.o" "../Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/11_Systick_delay/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/11_Systick_delay/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/adc.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/11_Systick_delay/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/11_Systick_delay/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/11_Systick_delay/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/11_Systick_delay/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/11_Systick_delay/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/11_Systick_delay/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/systick.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/11_Systick_delay/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/11_Systick_delay/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/systick.d" -MT"Src/systick.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/systick.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/11_Systick_delay/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/11_Systick_delay/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "11_Systick_delay.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Israel\Documents\STM32F4-BareMetal_Workspace\11_Systick_delay\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_Systick_delay.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 11_Systick_delay.elf
+ 
+arm-none-eabi-objdump -h -S  11_Systick_delay.elf  > "11_Systick_delay.list"
+arm-none-eabi-objcopy  -O binary  11_Systick_delay.elf  "11_Systick_delay.bin"
+arm-none-eabi-size   11_Systick_delay.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5568	    108	   1596	   7272	   1c68	11_Systick_delay.elf
+Finished building: default.size.stdout
+ 
+Finished building: 11_Systick_delay.list
+Finished building: 11_Systick_delay.bin
+ 
+ 
+
+20:28:59 Build Finished. 0 errors, 0 warnings. (took 1s.283ms)
+

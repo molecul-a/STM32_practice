@@ -1,0 +1,10 @@
+20:35:05 **** Incremental Build of configuration Debug for project 17_ADC_Interrupt ****
+make -j4 all 
+arm-none-eabi-size   17_ADC_Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5716	    108	   1596	   7420	   1cfc	17_ADC_Interrupt.elf
+Finished building: default.size.stdout
+ 
+
+20:35:05 Build Finished. 0 errors, 0 warnings. (took 455ms)
+

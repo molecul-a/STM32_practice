@@ -1,0 +1,24 @@
+20:50:42 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f411retx.d" -MT"Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f411retx.o" "../Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/8_uart_rx/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/8_uart_rx/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/8_uart_rx/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/8_uart_rx/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/8_uart_rx/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/8_uart_rx/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DDEBUG -DSTM32F411xE -c -I../Inc -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/8_uart_rx/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Israel/Documents/STM32F4-BareMetal_Workspace/8_uart_rx/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Israel\Documents\STM32F4-BareMetal_Workspace\8_uart_rx\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
+arm-none-eabi-objdump -h -S  8_uart_rx.elf  > "8_uart_rx.list"
+arm-none-eabi-objcopy  -O binary  8_uart_rx.elf  "8_uart_rx.bin"
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1096	      8	   1568	   2672	    a70	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_uart_rx.bin
+Finished building: 8_uart_rx.list
+ 
+ 
+
+20:50:47 Build Finished. 0 errors, 0 warnings. (took 4s.254ms)
+
