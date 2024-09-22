@@ -172,8 +172,8 @@ int main(void)
  80002a8:	f000 f8f0 	bl	800048c <uart2_tx_init>
 	while(1)
 	{
-		systickDelayMs(1000);
- 80002ac:	f44f 707a 	mov.w	r0, #1000	@ 0x3e8
+		systickDelayMs(3000);
+ 80002ac:	f640 30b8 	movw	r0, #3000	@ 0xbb8
  80002b0:	f000 f8b6 	bl	8000420 <systickDelayMs>
 		GPIOA->ODR ^= LED_PIN;
  80002b4:	4b06      	ldr	r3, [pc, #24]	@ (80002d0 <main+0x50>)
@@ -184,7 +184,7 @@ int main(void)
 		printf("A second passed!\n\r");
  80002c0:	4804      	ldr	r0, [pc, #16]	@ (80002d4 <main+0x54>)
  80002c2:	f000 fa59 	bl	8000778 <iprintf>
-		systickDelayMs(1000);
+		systickDelayMs(3000);
  80002c6:	bf00      	nop
  80002c8:	e7f0      	b.n	80002ac <main+0x2c>
  80002ca:	bf00      	nop
