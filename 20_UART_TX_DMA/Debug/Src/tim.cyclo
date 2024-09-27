@@ -1,0 +1,5 @@
+/home/artyom/Documents/STM32/chip_headers/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	2
+../Src/tim.c:20:6:tim2_1hz_init	1
+../Src/tim.c:34:6:tim2_1hz_interrupt_init	1
+../Src/tim.c:52:6:tim2_pa5_output_compare_init	1
+../Src/tim.c:80:6:tim3_pa6_input_capture	1
