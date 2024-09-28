@@ -1,4 +1,4 @@
-Src/main.o: ../Src/main.c \
+Src/lcd1602.o: ../Src/lcd1602.c ../Inc/lcd1602.h \
  /home/artyom/Documents/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  /home/artyom/Documents/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
  /home/artyom/Documents/STM32/chip_headers/CMSIS/Include/core_cm4.h \
@@ -7,8 +7,8 @@ Src/main.o: ../Src/main.c \
  /home/artyom/Documents/STM32/chip_headers/CMSIS/Include/cmsis_gcc.h \
  /home/artyom/Documents/STM32/chip_headers/CMSIS/Include/mpu_armv7.h \
  /home/artyom/Documents/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
- ../Inc/adc.h ../Inc/uart.h ../Inc/systick.h ../Inc/tim.h ../Inc/exti.h \
- ../Inc/lcd1602.h ../Inc/i2c.h
+ ../Inc/i2c.h
+../Inc/lcd1602.h:
 /home/artyom/Documents/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
 /home/artyom/Documents/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:
 /home/artyom/Documents/STM32/chip_headers/CMSIS/Include/core_cm4.h:
@@ -17,10 +17,4 @@ Src/main.o: ../Src/main.c \
 /home/artyom/Documents/STM32/chip_headers/CMSIS/Include/cmsis_gcc.h:
 /home/artyom/Documents/STM32/chip_headers/CMSIS/Include/mpu_armv7.h:
 /home/artyom/Documents/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h:
-../Inc/adc.h:
-../Inc/uart.h:
-../Inc/systick.h:
-../Inc/tim.h:
-../Inc/exti.h:
-../Inc/lcd1602.h:
 ../Inc/i2c.h:

@@ -1,0 +1,4 @@
+../Src/i2c.c:28:6:I2C1_init	1
+../Src/i2c.c:82:6:I2C1_byteread	8
+../Src/i2c.c:121:6:I2C1_burstRead	11
+../Src/i2c.c:179:6:I2C1_burstWrite	8
