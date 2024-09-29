@@ -1,0 +1,5 @@
+../Src/lcd1602.c:10:6:lcd_send_cmd	1
+../Src/lcd1602.c:27:6:lcd_send_data	1
+../Src/lcd1602.c:41:6:lcd_init	1
+../Src/lcd1602.c:66:6:lcd_send_string	2
+../Src/lcd1602.c:71:6:lcd_put_cur	3
